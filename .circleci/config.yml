@@ -41,7 +41,7 @@ jobs:
           to: "s3://reactstudyexample/"
       - run:
           name: invalidate cloudfront
-          command: 'aws cloudfront create-invalidation --distribution-id EKRHUWDQ73RU3 --paths "/*"'  	
+          command: 'aws cloudfront create-invalidation --distribution-id EKRHUWDQ73RU3 --paths "/*"'
 workflows:
   version: 2.1
   deployment:
