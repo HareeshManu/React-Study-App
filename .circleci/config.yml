@@ -1,0 +1,60 @@
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.15
+jobs:
+  devbuild:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - run:
+          name: install-dependencies
+          command: "npm install"
+      - run:
+          name: build-app
+          command: "npm run build"
+      - aws-s3/sync:
+          arguments: |
+            --cache-control "max-age=86400"
+          from: build
+          overwrite: true
+          to: "s3://reactstudyexample/"
+      - run:
+          name: invalidate cloudfront
+          command: 'aws cloudfront create-invalidation --distribution-id EKRHUWDQ73RU3 --paths "/*"'
+  prodbuild:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - run:
+          name: install-dependencies
+          command: "npm install"
+      - run:
+          name: build-app
+          command: "npm run build"
+      - aws-s3/sync:
+          arguments: |
+            --cache-control "max-age=86400"
+          from: build
+          overwrite: true
+          to: "s3://reactstudyexample/"
+      - run:
+          name: invalidate cloudfront
+          command: 'aws cloudfront create-invalidation --distribution-id EKRHUWDQ73RU3 --paths "/*"'  	
+workflows:
+  version: 2.1
+  deployment:
+    jobs:
+      - devbuild:
+          filters:
+            tags:
+              only: /^qa-.*/
+            branches:
+              ignore: /.*/
+      - prodbuild:
+          filters:
+            tags:
+              only: /^rel-.*/
+            branches:
+              ignore: /.*/
