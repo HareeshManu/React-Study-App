@@ -72,7 +72,7 @@ const Main = (props) => {
           <Image src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/slideshow/read1.jpg" rounded />
           <div class="overlay">
               <h2>Book Collection</h2>
-              <p><a href="#"> <em class="fa fa-plus-square"></em> </a></p>
+              <p><a href="#home"> <em class="fa fa-plus-square"></em> </a></p>
             </div>
         </div> 
       </Col>
@@ -81,7 +81,7 @@ const Main = (props) => {
             <Image src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/slideshow/read2.jpg" rounded />
             <div class="overlay">
               <h2>Best Offer</h2>
-              <p><a href="#"> <em class="fa fa-plus-square"></em> </a></p>
+              <p><a href="#home"> <em class="fa fa-plus-square"></em> </a></p>
             </div>
         </div> 
       </Col>
@@ -90,7 +90,7 @@ const Main = (props) => {
             <Image src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/slideshow/read3.jpg" rounded />
             <div class="overlay">
               <h2>Top Selling Books</h2>
-              <p><a href="#"> <em class="fa fa-plus-square"></em> </a></p>
+              <p><a href="#home"> <em class="fa fa-plus-square"></em> </a></p>
             </div>
         </div> 
       </Col>
