@@ -88,3 +88,18 @@ body{
     text-align: center;
     width: 20px;
   } 
+
+  /* Header End  */
+
+  .lastHeader{
+    height: 83px;
+  }
+  .link-item {
+    color: #555;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .link-item:hover {
+    color: #00c2ba 
+  }
