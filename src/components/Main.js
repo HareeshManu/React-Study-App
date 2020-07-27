@@ -4,7 +4,9 @@ import {
   Row,
   Col,
   Image,
-  Carousel
+  Carousel,
+  Card,
+  Button
 } from "react-bootstrap";
 import '../styles/Main.css';
 
@@ -29,10 +31,6 @@ const Main = (props) => {
             src={slider1}
             alt="First slide"
           />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -40,11 +38,6 @@ const Main = (props) => {
             src={slider2}
             alt="Second slide"
           />
-
-          {/* <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -52,13 +45,6 @@ const Main = (props) => {
             src={slider3}
             alt="Third slide"
           />
-
-          {/* <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
       </Col>
@@ -96,6 +82,92 @@ const Main = (props) => {
       </Col>
     </Row>
   </Container>
+</div>
+<div className="home-section">
+    <Container>
+      <div className="fp-product">
+        <h3 class="module-title"><span>Featured products</span></h3>
+        <Row>
+            <Col md={3} xs ={12} className="card-image">
+              <div className="card-area">
+              <Card style={{ width: '16rem'  }}>
+                <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book8.png" />
+                <Card.Body style={{ paddingBottom: '0' }} >
+                  <Card.Title>Life style </Card.Title>
+                  <Card.Text class="price-container">
+                  <div class="base-price strike">
+                  $300.00 </div>
+                  <div class="sale-price">
+                  $280.00 
+                  </div>
+                </Card.Text>
+                </Card.Body>
+              </Card>
+              </div>
+            </Col>
+            <Col md={3} xs ={12} className="card-image">
+            <div className="card-area">
+              <Card style={{ width: '16rem' }}>
+              <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book2.png" />
+              <Card.Body style={{ paddingBottom: '0' }} >
+                <Card.Title>Vacation</Card.Title>
+                <Card.Text class="price-container">
+                  <div class="base-price strike">
+                  $250.00 </div>
+                  <div class="sale-price">
+                  $200.00 
+                  </div>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </div>
+            </Col>
+            <Col md={3} xs ={12} className="card-image">
+            <div className="card-area">
+            <Card style={{ width: '16rem' }}>
+              <Card.Img className="image" variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book1.png" />
+              <Card.Body style={{ paddingBottom: '0' }} >
+                <Card.Title>Heroes Proved </Card.Title>
+                <Card.Text class="price-container">
+                  <div class="base-price strike">
+                  $250.00 </div>
+                  <div class="sale-price">
+                  $180.00 
+                  </div>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </div>
+            </Col>
+            <Col md={3} xs ={12} className="card-image">
+            <div className="card-area">
+            <Card style={{ width: '16rem' }}>
+              <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book6.png" />
+              <Card.Body style={{ paddingBottom: '0' }} >
+                <Card.Title>Business ethics</Card.Title>
+                <Card.Text class="price-container">
+                  <div class="base-price strike">
+                  $400.00 </div>
+                  <div class="sale-price">
+                  $300.00 
+                  </div>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </div>
+            </Col>
+        </Row>
+      </div>
+    </Container>
+</div>
+<div className="carosel-gallery">
+
+</div>
+<div className="latest-product">
+
+</div>
+<div className="gallery-section">
+
 </div>
 </>
   )

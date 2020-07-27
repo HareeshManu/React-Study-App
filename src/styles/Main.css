@@ -1,3 +1,10 @@
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: raleway,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #3a3a3a
+}
+
  h2 {
     text-transform: uppercase;
     color: #fff;
@@ -12,6 +19,7 @@
     z-index: 9;
     margin-top: -100px;
     position: relative;
+    height: 280px;
 }
 
 .slide-image {
@@ -86,4 +94,63 @@
     font-size: 21px;
     width: 180px;
     margin: auto;
+}
+
+/* Home Section */
+
+.module-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 0 0 10px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.fp-product {
+    padding-top: 45px;
+}
+
+.card-image {
+    padding: 20px;
+}
+
+.card-area {
+    box-shadow: 0 0 1px rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.2);
+    background: #fff none repeat scroll 0 0;
+    overflow: hidden;
+}
+
+.image {
+    border-bottom: 1px solid #eee;
+}
+
+.price-container{
+    display: inline-flex
+}
+.base-price {
+    color: #00c2ba;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.base-price.strike {
+    text-decoration: line-through;
+    color: #555;
+    font-weight: 300!important;
+}
+
+.sale-price {
+    color: #00c2ba;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .module-title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
