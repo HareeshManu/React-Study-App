@@ -6,7 +6,8 @@ import {
   Image,
   Carousel,
   Card,
-  Button
+  Tab,
+  Tabs
 } from "react-bootstrap";
 import '../styles/Main.css';
 
@@ -50,8 +51,9 @@ const Main = (props) => {
       </Col>
     </Row>
 </Container>
-<div className="book-list">
-  <Container>
+<Container className="middle-section">
+{/* <div > */}
+  <Container fluid className="book-list">
     <Row>
       <Col md ={4} xs={12} >
         <div className="slide-image">
@@ -82,7 +84,7 @@ const Main = (props) => {
       </Col>
     </Row>
   </Container>
-</div>
+{/* </div> */}
 <div className="home-section">
     <Container>
       <div className="fp-product">
@@ -160,8 +162,116 @@ const Main = (props) => {
       </div>
     </Container>
 </div>
-<div className="carosel-gallery">
-
+<div className="blog-section">
+<Container>
+    <Row className="center-align blog-section-add-margin">
+      <Col className="add-color">LATEST FROM OUR BLOG</Col>
+    </Row>
+    <Row className="justify-content-center">
+      <Col style={{textAlign: "center"}}>
+        <Tabs className="justify-content-center">
+          <Tab eventKey="latestbooks" title="LATEST BOOKS">
+            <Row className="blog-section-add-margin">
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"   
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg"
+                  />
+                </Container>
+                <Container fluid>
+                  <Row className="justify-content-center">
+                    <h5> A Collection of Poems</h5>
+                  </Row>
+                </Container>
+              </Col>
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions" 
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog6.jpg"
+                  />
+                </Container>
+              </Col>
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg"
+                  />
+                </Container>
+              </Col>
+            </Row>
+          </Tab>
+          <Tab eventKey="profile" title="BESTSELLING BOOKS">
+            <Row className="blog-section-add-margin">
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg"
+                  />
+                </Container>
+              </Col>
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg"
+                  />
+                </Container>
+              </Col>
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog1.jpg"
+                  />
+                </Container>
+              </Col>
+            </Row>
+          </Tab>
+          <Tab eventKey="setting" title="RECENT BOOKS">
+          <Row className="blog-section-add-margin">
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg"
+                  />
+                </Container>
+              </Col>
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg"
+                  />
+                </Container>
+              </Col>
+              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
+                <Container fluid className="zero-margin-padding">
+                  <img
+                      className="blog-image-dimensions"
+                      alt="blog"
+                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg"
+                  />
+                </Container>
+              </Col>
+            </Row>
+          </Tab>
+        </Tabs>
+      </Col>
+    </Row>
+    </Container>
 </div>
 <div className="latest-product">
 
@@ -169,6 +279,7 @@ const Main = (props) => {
 <div className="gallery-section">
 
 </div>
+</Container>
 </>
   )
 }

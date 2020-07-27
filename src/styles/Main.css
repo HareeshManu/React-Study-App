@@ -11,9 +11,22 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     text-align: center;
     font-weight: 700;
 }
-.book-list {
+
+/* Middle Section */
+
+.container.middle-section {
     width: 1170px;
     background: #fff;
+    box-shadow: 0 3px 63px rgba(0,0,0,.22);
+    margin: 0 auto;
+    z-index: 9;
+    margin-top: -100px;
+    position: relative;
+    padding: 0;
+}
+.book-list {
+    width: 1170px;
+    background: #f9f9f9;
     box-shadow: 0 3px 63px rgba(0,0,0,.22);
     margin: 0 auto;
     z-index: 9;
@@ -146,6 +159,42 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     color: #00c2ba;
     font-size: 18px;
     font-weight: 600;
+}
+
+
+/* Blog Section */
+
+.blog-section {
+    background: #f9f9f9;
+    padding-top: 45px;
+}
+.center-align {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: #00c2ba;
+    font-weight: 600;
+}
+.add-color {
+    color: #00C2BA;
+}
+.blog-section-add-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-align-center {
+    text-align: center;
+}
+.zero-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+.blog-image-dimensions {
+    height: 270px;
+    width: 320px;
+}
+.footer-container {
+    background-color: #333;
 }
 
 @media screen and (min-width: 768px) {
