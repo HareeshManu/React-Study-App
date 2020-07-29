@@ -10,7 +10,7 @@ import {
   Tabs
 } from "react-bootstrap";
 import '../styles/Main.css';
-
+import Images from './Images';
 
 import slider1 from "../assets/slider_image_01.png";
 import slider2 from "../assets/slider_image_02.png";
@@ -273,11 +273,70 @@ const Main = (props) => {
     </Row>
     </Container>
 </div>
-<div className="latest-product">
+<Images/>
+<div className="latest-products">
+  <Container>
+  <h3 class="product-title">
+    <span>Latest Products</span>
+  </h3>
+  <Row>
+    <Col md={3} sm={6} className="product-item">
+    <div className="individual-product">
+      <div class="overlay">
+        <div class="tag"><span>NEW</span></div>
+      </div>
+      <Card style={{ width: '16rem'  }}>
+        <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book3.png" />
+      </Card>
+      
+    </div>
+    </Col>
+    <Col md={3} sm={6} className="product-item">
+    <div className="individual-product">
+      <div class="overlay">
+        <div class="tag"><span>NEW</span></div>
+      </div>
+      <Card style={{ width: '16rem'  }}>
+        <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book2.png" />
+      </Card>
+    </div>
+    </Col>
+    <Col md={3} sm={6} className="product-item">
+    <div className="individual-product">
+      <div class="overlay">
+        <div class="tag"><span>NEW</span></div>
+      </div>
+      <Card style={{ width: '16rem'  }}>
+        <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book5.png" />
+      </Card>
+    </div>
+    </Col>
+    <Col md={3} sm={6} className="product-item">
+    <div className="individual-product">
+      <div class="overlay">
+          <div class="tag"><span>NEW</span></div>
+      </div>
+      <Card style={{ width: '16rem'  }}>
+        <Card.Img className="image"  variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book3.png" />
+      </Card>
+    </div>
+    </Col>
+  </Row>
+
+  </Container>
 
 </div>
-<div className="gallery-section">
-
+<div className="news-letter">
+  <Container>
+    <Row style={{ marginBottom: '40px' }}>
+      <Col md={5} style={{ left: '5%' }}>
+      <h3 class="news-letter-title"><span>Subscribe now</span></h3> 
+      </Col>
+      <Col md={7}>
+         <div class="news-letter-text">FOR COUPONS, NEWSLETTERS, AND MORE!</div> 
+      </Col>
+    </Row>
+  </Container>
 </div>
 </Container>
 </>
