@@ -7,11 +7,17 @@ import {
   Carousel,
   Card,
   Tab,
-  Tabs
+  Tabs,
+  Navbar,
+  Form,
+  Button
 } from "react-bootstrap";
 import '../styles/Main.css';
 import Images from './Images';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 import slider1 from "../assets/slider_image_01.png";
 import slider2 from "../assets/slider_image_02.png";
 import slider3 from "../assets/slider_image_03.png";
@@ -334,6 +340,21 @@ const Main = (props) => {
       </Col>
       <Col md={7}>
          <div class="news-letter-text">FOR COUPONS, NEWSLETTERS, AND MORE!</div> 
+      </Col>
+    </Row>
+    <Row>
+      <Col style={{ margin: '0% 24%' }}>
+      <Navbar>
+        <Form inline>
+        <FontAwesomeIcon
+                icon={faEnvelope}
+                fixedWidth
+                className="mr-2 align-middle"
+              />
+          <input type="text" placeholder="Enter your email" className="email-input" />
+          <Button className="subscribe-btn" type="submit">Subscribe</Button>
+        </Form>
+      </Navbar>
       </Col>
     </Row>
   </Container>

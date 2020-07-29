@@ -287,6 +287,32 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     font-weight: 300;
     padding-top: 27px;
  }
+ .news-letter .email-input {
+    background: transparent none repeat scroll 0 0;
+    border-left: medium;
+    border-radius: 0;
+    border-right: medium;
+    border-top: medium;
+    box-shadow: none;
+    color: #777;
+    font-weight: 700;
+    height: 40px;
+    letter-spacing: 1px;
+    width: 320px!important;
+    border-bottom: 1px solid #ccc;
+ }
+ .news-letter input[type="text"]::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #777 !important; 
+} 
+  
+
+ .news-letter .subscribe-btn {
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 3px #007671;
+    background-color: #00c2ba;
+    border-radius: 25px;
+ }
 @media screen and (min-width: 768px) {
     .module-title {
         margin-bottom: 20px;
