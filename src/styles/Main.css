@@ -24,6 +24,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     position: relative;
     padding: 0;
 }
+
 .book-list {
     width: 1170px;
     background: #f9f9f9;
@@ -313,9 +314,35 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     background-color: #00c2ba;
     border-radius: 25px;
  }
+ 
 @media screen and (min-width: 768px) {
     .module-title {
         margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container.middle-section, .book-list {
+        width: auto;
+    }
+    .book-list {
+        margin-top: 100px;
+    }
+    .home-section {
+        margin-top: 150px;
+    }
+    .card-image {
+        text-align: center;
+    }
+    .card-area {
+        display: inline-block;
+    }
+    .price-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .individual-product {
         text-align: center;
     }
 }

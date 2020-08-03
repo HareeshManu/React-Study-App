@@ -61,7 +61,7 @@ const Main = (props) => {
 {/* <div > */}
   <Container fluid className="book-list">
     <Row>
-      <Col md ={4} xs={12} >
+      <Col md={4} xs={6} >
         <div className="slide-image">
           <Image src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/slideshow/read1.jpg" rounded />
           <div class="overlay">
@@ -70,7 +70,7 @@ const Main = (props) => {
             </div>
         </div> 
       </Col>
-      <Col  md ={4}  xs={12} >
+      <Col  md ={4}  xs={6} >
         <div className="slide-image">
             <Image src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/slideshow/read2.jpg" rounded />
             <div class="overlay">
@@ -178,101 +178,132 @@ const Main = (props) => {
         <Tabs className="justify-content-center">
           <Tab eventKey="latestbooks" title="LATEST BOOKS">
             <Row className="blog-section-add-margin">
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"   
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg"
-                  />
-                </Container>
-                <Container fluid>
-                  <Row className="justify-content-center">
-                    <h5> A Collection of Poems</h5>
-                  </Row>
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg" />
+                  <Card.Body>
+                    <Card.Title>A Collection Of Poems</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions" 
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog6.jpg"
-                  />
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog6.jpg" />
+                  <Card.Body>
+                    <Card.Title>Top Selling books</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg"
-                  />
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg" />
+                  <Card.Body>
+                    <Card.Title>Your Most Recommended Books</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </Tab>
           <Tab eventKey="profile" title="BESTSELLING BOOKS">
-            <Row className="blog-section-add-margin">
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg"
-                  />
-                </Container>
+            <Row className="blog-section-add-margin"> 
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg" />
+                  <Card.Body>
+                    <Card.Title>A Collection Of Poems</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg"
-                  />
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg" />
+                  <Card.Body>
+                    <Card.Title>Top Selling books</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog1.jpg"
-                  />
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog1.jpg" />
+                  <Card.Body>
+                    <Card.Title>Your Most Recommended Books</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </Tab>
           <Tab eventKey="setting" title="RECENT BOOKS">
           <Row className="blog-section-add-margin">
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg"
-                  />
-                </Container>
+          <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg" />
+                  <Card.Body>
+                    <Card.Title>A Collection Of Poems</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg"
-                  />
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg" />
+                  <Card.Body>
+                    <Card.Title>Top Selling books</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col lg={4} md={4} sm={4} xs={6} className="text-align-center">
-                <Container fluid className="zero-margin-padding">
-                  <img
-                      className="blog-image-dimensions"
-                      alt="blog"
-                      src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg"
-                  />
-                </Container>
+              <Col md={4} sm={6} className="product-item">
+                <Card style={{ width: '21rem' }}>
+                  <Card.Img variant="top" 
+                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg" />
+                  <Card.Body>
+                    <Card.Title>Your Most Recommended Books</Card.Title>
+                    <Card.Text>
+                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
+                    </Card.Text>
+                    <Button variant="primary">Read More</Button>
+                  </Card.Body>
+                </Card>
               </Col>
-            </Row>
+          </Row>
           </Tab>
         </Tabs>
       </Col>
