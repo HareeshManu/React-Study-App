@@ -178,7 +178,7 @@ const Main = (props) => {
   </div>
 
   <Tabs className="justify-content-center" defaultActiveKey="home" id="uncontrolled-tab-example">
-  <Tab eventKey="home" title="Latest Books">
+  <Tab eventKey="home" className="book-tab" title="Latest Books">
   <Container className="tab-books">
     <Row className="justify-content-center">   
     <Col  md ={4} xs={12} >
@@ -228,7 +228,7 @@ const Main = (props) => {
     <Row>   
     <Col  md ={4} xs={12} >
     <Card>
-  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg"  />
   <Card.Body className="latest-books">
     <Card.Title>A Collection Of Poems</Card.Title>
     <Card.Text>
@@ -241,7 +241,7 @@ const Main = (props) => {
 </Col>
 <Col  md ={4}  xs={12} >
     <Card>
-  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png" />
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog1.jpg" />
   <Card.Body className="latest-books">
     <Card.Title>Top Selling Books</Card.Title>
     <Card.Text>
@@ -254,7 +254,7 @@ const Main = (props) => {
 </Col>
 <Col  md ={4}  xs={12} >
     <Card>
-  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog6.jpg"  />
   <Card.Body className="latest-books">
     <Card.Title>Top Selling Books</Card.Title>
     <Card.Text>
@@ -274,7 +274,7 @@ const Main = (props) => {
     <Row>   
     <Col  md ={4} xs={12} >
     <Card>
-  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg"  />
   <Card.Body className="latest-books">
     <Card.Title>Top Selling Books</Card.Title>
     <Card.Text>
@@ -287,7 +287,7 @@ const Main = (props) => {
 </Col>
 <Col  md ={4}  xs={12} >
     <Card>
-  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png" />
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog1.jpg" />
   <Card.Body className="latest-books">
     <Card.Title>Top Selling Books</Card.Title>
     <Card.Text>
@@ -300,7 +300,7 @@ const Main = (props) => {
 </Col>
 <Col  md ={4}  xs={12} >
     <Card>
-  <Card.Img variant="top"src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Img variant="top"src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg"  />
   <Card.Body className="latest-books">
     <Card.Title>Top Selling Books</Card.Title>
     <Card.Text>
