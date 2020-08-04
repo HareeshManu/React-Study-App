@@ -205,6 +205,33 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     padding: 50px 0;
     background: #f5f5f5 none repeat scroll 0 0;
 }
+.read-more{
+    background-color:#00c2ba !important;
+    border-color:#00c2ba !important;
+    box-shadow: 0 3px #007671;
+}
+.latest-date{
+   color: #00c2ba;
+}
+.latest-books{
+    text-align: center;
+}
+.latest-books-desc{
+    font-size:14px;
+}
+.tab-heading{
+    text-align: center;
+    padding-bottom:30px;
+}
+.tab-heading span{
+    font-size:20px;
+    color: #00c2ba;
+    }
+    
+    .tab-books{
+        padding:40px;
+    }
+
 .product-title {
     color: #3a3a3a;
     font-size: 18px;
