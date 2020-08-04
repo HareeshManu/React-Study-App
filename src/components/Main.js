@@ -12,7 +12,7 @@ import {
   Form,
   Button
 } from "react-bootstrap";
-import '../styles/Main.css';
+import '../styles/Main.scss';
 import Images from './Images';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

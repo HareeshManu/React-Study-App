@@ -4,8 +4,8 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import '../styles/Main.css';
-import '../styles/Images.css';
+import '../styles/Main.scss';
+import '../styles/Images.scss';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
