@@ -177,8 +177,8 @@ const Main = (props) => {
     </h3>
   </div>
 
-  <Tabs className="justify-content-center" defaultActiveKey="home" id="uncontrolled-tab-example">
-  <Tab eventKey="home" className="book-tab" title="Latest Books">
+  <Tabs className="justify-content-center book-tab" defaultActiveKey="home" id="uncontrolled-tab-example">
+  <Tab eventKey="home" title="Latest Books">
   <Container className="tab-books">
     <Row className="justify-content-center">   
     <Col  md ={4} xs={12} >
