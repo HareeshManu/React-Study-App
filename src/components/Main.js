@@ -168,147 +168,155 @@ const Main = (props) => {
       </div>
     </Container>
 </div>
-<div className="blog-section">
+<div class="blog-section">
 <Container>
-    <Row className="center-align blog-section-add-margin">
-      <Col className="add-color">LATEST FROM OUR BLOG</Col>
+
+  <div class='tab-heading'>
+  <h3> 
+    <span>LATEST FROM OUR BLOG</span>
+    </h3>
+  </div>
+
+  <Tabs className="justify-content-center" defaultActiveKey="home" id="uncontrolled-tab-example">
+  <Tab eventKey="home" title="Latest Books">
+  <Container className="tab-books">
+    <Row className="justify-content-center">   
+    <Col  md ={4} xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.jpg" />
+  <Card.Body className="latest-books">
+    <Card.Title>A Collection Of Poems</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col  md ={4}  xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog3.jpg" />
+  <Card.Body className="latest-books">
+    <Card.Title>Top Selling Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col  md ={4}  xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog2.jpg"  />
+  <Card.Body className="latest-books">
+    <Card.Title>Your Most Recommended Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
     </Row>
-    <Row className="justify-content-center">
-      <Col style={{textAlign: "center"}}>
-        <Tabs className="justify-content-center">
-          <Tab eventKey="latestbooks" title="LATEST BOOKS">
-            <Row className="blog-section-add-margin">
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg" />
-                  <Card.Body>
-                    <Card.Title>A Collection Of Poems</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog6.jpg" />
-                  <Card.Body>
-                    <Card.Title>Top Selling books</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg" />
-                  <Card.Body>
-                    <Card.Title>Your Most Recommended Books</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Tab>
-          <Tab eventKey="profile" title="BESTSELLING BOOKS">
-            <Row className="blog-section-add-margin"> 
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg" />
-                  <Card.Body>
-                    <Card.Title>A Collection Of Poems</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog9.jpg" />
-                  <Card.Body>
-                    <Card.Title>Top Selling books</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog1.jpg" />
-                  <Card.Body>
-                    <Card.Title>Your Most Recommended Books</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Tab>
-          <Tab eventKey="setting" title="RECENT BOOKS">
-          <Row className="blog-section-add-margin">
-          <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog8.jpg" />
-                  <Card.Body>
-                    <Card.Title>A Collection Of Poems</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog5.jpg" />
-                  <Card.Body>
-                    <Card.Title>Top Selling books</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4} sm={6} className="product-item">
-                <Card style={{ width: '21rem' }}>
-                  <Card.Img variant="top" 
-                    src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog7.jpg" />
-                  <Card.Body>
-                    <Card.Title>Your Most Recommended Books</Card.Title>
-                    <Card.Text>
-                      Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-          </Row>
-          </Tab>
-        </Tabs>
-      </Col>
+</Container>
+  </Tab>
+  <Tab eventKey="profile" title="Top Selling Books">
+  <Container className="tab-books">
+    <Row>   
+    <Col  md ={4} xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Body className="latest-books">
+    <Card.Title>A Collection Of Poems</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col  md ={4}  xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png" />
+  <Card.Body className="latest-books">
+    <Card.Title>Top Selling Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col  md ={4}  xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Body className="latest-books">
+    <Card.Title>Top Selling Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+
     </Row>
-    </Container>
+</Container>
+  </Tab>
+  <Tab eventKey="contact" title="Recent Books">
+  <Container className="tab-books">
+    <Row>   
+    <Col  md ={4} xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Body className="latest-books">
+    <Card.Title>Top Selling Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col  md ={4}  xs={12} >
+    <Card>
+  <Card.Img variant="top" src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png" />
+  <Card.Body className="latest-books">
+    <Card.Title>Top Selling Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col  md ={4}  xs={12} >
+    <Card>
+  <Card.Img variant="top"src="http://demo.themeparrot.com/bookstore_new/images/themeparrot/blog/blog4.png"  />
+  <Card.Body className="latest-books">
+    <Card.Title>Top Selling Books</Card.Title>
+    <Card.Text>
+     <div class="latest-date"> 08-Sep-2014</div>
+   <div class="latest-books-desc"> Nulla eleifend vel risus eget ultricies. Praesent sed tortor sem. Vestibulum...</div>
+    </Card.Text>
+    <Button className="read-more" variant="primary">Read more</Button>
+  </Card.Body>
+</Card>
+</Col>
+
+    </Row>
+</Container>
+  </Tab>
+</Tabs>
+  </Container>
 </div>
 <Images/>
 <div className="latest-products">
