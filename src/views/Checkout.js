@@ -27,7 +27,46 @@ const Checkout = (props) => {
           hoi
         </Col>
       </Row>
-
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="checkout-options border">
+          Account & Billing Details
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }}>
+          Account & Billing Details Component is here
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="checkout-options border">
+          Shipping Address
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }}>
+          Shipping Address Component is here
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="checkout-options border">
+          Shipping & Payment Methods 
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }}>
+          Shipping & Payment Methods Component is here
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="checkout-options border">
+          Confirm order
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }}>
+          Confirm order component is here
+        </Col>
+      </Row>
     </Container>
     <Footer/>
     </>
