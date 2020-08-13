@@ -5,6 +5,8 @@ import Cart from '../views/Cart';
 import Checkout from '../views/Checkout';
 import Booking from '../views/Booking';
 import Profile from '../views/Profile';
+import Books from '../components/Books';
+
 const Routes = () => {
   return (
   <>
@@ -24,6 +26,9 @@ const Routes = () => {
         </Route>
         <Route exact path="/login">
           <Profile/>
+        </Route>
+        <Route exact path="/books">
+          <Books/>
         </Route>
       </Switch>
     </Router>
