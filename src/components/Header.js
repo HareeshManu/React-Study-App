@@ -31,6 +31,7 @@ import logo from "../assets/bookstore_blue.png";
 
 
 const Header = (props) => {
+  const itemCount=props.itemCount || 0;
   return (
     <>
 <section id="header">
@@ -87,7 +88,7 @@ const Header = (props) => {
     <Navbar bg="white" expand="lg">
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
-      <Nav.Link className= "navigation-item" href="#home">MY CART</Nav.Link>
+      <Nav.Link className= "navigation-item" href="/my-cart">MY CART</Nav.Link>
       <Nav.Link className= "navigation-item" href="#link">REGISTER</Nav.Link>
       <Nav.Link className= "navigation-item" href="#link">COMAPRE</Nav.Link>
       <Nav.Link className= "navigation-item" href="#link">LOGIN</Nav.Link>
@@ -124,8 +125,10 @@ const Header = (props) => {
                   icon={faShoppingCart}
                   fixedWidth
                   className="mr-2 align-middle"
+                  href="/my-cart"
+                  
         />
-        <span className="cart-item-count">1</span>
+        <span className="cart-item-count">{itemCount}</span>
         </Col>
         <Col md={6} className="cart-section">
         <FontAwesomeIcon
