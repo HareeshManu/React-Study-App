@@ -74,6 +74,11 @@ h6 {
 	line-height: 1.1;
 	color: #3a3a3a;
 }
+$mynewcolor:#008f89;
+.btn-primary {
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
 .container.middle-section {
 	width: 1170px;
 	background: #fff;
