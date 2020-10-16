@@ -1,0 +1,80 @@
+.footer-container {
+    margin-top: 0;
+}
+.bread-crumb {
+    box-shadow: -1px 1px 1px 1px rgba(0,0,0,.2);
+}
+.details-section {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.book-image {
+    /* //width: 50px;
+    height: 50px; */
+    border: 2px solid #eee;
+    margin-right: 30px;
+}
+.book-title {
+    font-weight: 700;
+    font-size: 26px;
+    color: #00c2ba;
+    padding-bottom: 15px;
+}
+.book-title-row {
+    border-bottom: 1px solid #eee;
+}
+.price-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.price-text-styles {
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.primary-price {
+    font-family: raleway,sans-serif;
+    text-decoration: line-through;
+    color: #555;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.actual-price {
+    font-family: raleway,sans-serif;
+    font-size: 16px;
+    color: #00c2ba;
+    font-weight: 700;
+}
+.add-to-cart-row {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.qty-text {
+    padding-right: 10px;
+}
+.add-to-cart-button {
+    margin-top: 10px;
+    background-color: #00c2ba;
+}
+.book-details-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.book-details-col {
+    min-width: 500px;
+}
+.header-styles {
+    color: white;
+    background-color: #00c2ba;
+}
+.react-numeric-input {
+    height: fit-content;
+}
