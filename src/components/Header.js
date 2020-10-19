@@ -148,9 +148,9 @@ const Header = (props) => {
       <Navbar bg="white" expand="lg">
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-start">
-          <Nav.Link className= "link-item" href="#home">HOME</Nav.Link>
-          <Nav.Link className= "link-item" href="#link">BOOKS</Nav.Link>
-          <Nav.Link className= "link-item" href="#link">E-BOOKS</Nav.Link>
+          <Nav.Link className= "link-item" href="">HOME</Nav.Link>
+          <Nav.Link className= "link-item" href="books">BOOKS</Nav.Link>
+          <Nav.Link className= "link-item" href="books">E-BOOKS</Nav.Link>
           <Nav.Link className= "link-item" href="#link">JOOMLA PAGE</Nav.Link>
           <Nav.Link className= "link-item" href="#link">BLOG</Nav.Link>
           <Nav.Link className= "link-item" href="#link">CONTACT</Nav.Link>
